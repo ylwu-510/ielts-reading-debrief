@@ -1,0 +1,533 @@
+{
+  "title": "C15 Test 2 Passage 1 阅读复盘",
+  "subtitle": "Could urban engineers learn from dance?  |  真实作答示例",
+  "sources": [
+    {
+      "id": "passage",
+      "label": "C15 Test2 Passage 1.pdf（原文及实际高亮）",
+      "text": "A\nThe way we travel around cities has a major impact on whether they are sustainable. Transportation is estimated to account for 30% of energy consumption in most of the world's most developed nations, so lowering the need for energy-using vehicles is essential for decreasing the environmental impact of mobility. But as more and more people move to cities, it is important to think about other kinds of sustainable travel too. The ways we travel affect our physical and mental health, our social lives, our access to work and culture, and the air we breathe. Engineers are tasked with changing how we travel round cities through urban design, but the engineering industry still works on the assumptions that led to the creation of the energy-consuming transport systems we have now: the emphasis placed solely on efficiency, speed, and quantitative data. We need radical changes, to make it healthier, more enjoyable, and less environmentally damaging to travel around cities.\n\nB\nDance might hold some of the answers. That is not to suggest everyone should dance their way to work, however healthy and happy it might make us, but rather that the techniques used by choreographers to experiment with and design movement in dance could provide engineers with tools to stimulate new ideas in city-making. Richard Sennett, an influential urbanist and sociologist who has transformed ideas about the way cities are made, argues that urban design has suffered from a separation between mind and body since the introduction of the architectural blueprint.\n\nC\nWhereas medieval builders improvised and adapted construction through their intimate knowledge of materials and personal experience of the conditions on a site, building designs are now conceived and stored in media technologies that detach the designer from the physical and social realities they are creating. While the design practices created by these new technologies are essential for managing the technical complexity of the modern city, they have the drawback of simplifying reality in the process.\n\nD\nTo illustrate, Sennett discusses the Peachtree Center in Atlanta, USA, a development typical of the modernist approach to urban planning prevalent in the 1970s. Peachtree created a grid of streets and towers intended as a new pedestrian-friendly downtown for Atlanta. According to Sennett, this failed because its designers had invested too much faith in computer-aided design to tell them how it would operate. They failed to take into account that purpose-built street cafés could not operate in the hot sun without the protective awnings common in older buildings, and would need energy-consuming air conditioning instead, or that its giant car park would feel so unwelcoming that it would put people off getting out of their cars. What seems entirely predictable and controllable on screen has unexpected results when translated into reality.\n\nE\nThe same is true in transport engineering, which uses models to predict and shape the way people move through the city. Again, these models are necessary, but they are built on specific world views in which certain forms of efficiency and safety are considered and other experiences of the city ignored. Designs that seem logical in models appear counter-intuitive in the actual experience of their users. The guard rails that will be familiar to anyone who has attempted to cross a British road, for example, were an engineering solution to pedestrian safety based on models that prioritise the smooth flow of traffic. On wide major roads, they often guide pedestrians to specific crossing points and slow down their progress across the road by using staggered access points to divide the crossing into two – one for each carriageway. In doing so they make crossings feel longer, introducing psychological barriers greatly impacting those that are the least mobile, and encouraging others to make dangerous crossings to get around the guard rails. These barriers don't just make it harder to cross the road: they divide communities and decrease opportunities for healthy transport. As a result, many are now being removed, causing disruption, cost, and waste.\n\nF\nIf their designers had had the tools to think with their bodies – like dancers – and imagine how these barriers would feel, there might have been a better solution. In order to bring about fundamental changes to the ways we use our cities, engineering will need to develop a richer understanding of why people move in certain ways, and how this movement affects them. Choreography may not seem an obvious choice for tackling this problem. Yet it shares with engineering the aim of designing patterns of movement within limitations of space. It is an art form developed almost entirely by trying out ideas with the body, and gaining instant feedback on how the results feel. Choreographers have deep understanding of the psychological, aesthetic, and physical implications of different ways of moving.\n\nG\nObserving the choreographer Wayne McGregor, cognitive scientist David Kirsh described how he 'thinks with the body'. Kirsh argues that by using the body to simulate outcomes, McGregor is able to imagine solutions that would not be possible using purely abstract thought. This kind of physical knowledge is valued in many areas of expertise, but currently has no place in formal engineering design processes. A suggested method for transport engineers is to improvise design solutions and get instant feedback about how they would work from their own experience of them, or model designs at full scale in the way choreographers experiment with groups of dancers. Above all, perhaps, they might learn to design for emotional as well as functional effects."
+    },
+    {
+      "id": "answers",
+      "label": "C15 Test2 Passage 1 answer.pdf（题目、作答与批改）",
+      "text": "用户说明：绿色为正确答案，红色为错答。1 B；2 D→C；3 F；4 A→D；5 C→E；6 E→A；7 safety；8 traffic；9 carriageway；10 mobile；11 dangerous；12 communities；13 healthy。摘要填空要求 ONE WORD ONLY。"
+    }
+  ],
+  "answers": [
+    {
+      "id": "1",
+      "type": "段落信息匹配",
+      "user_answer": "B",
+      "key": "B",
+      "status": "correct",
+      "answer_source": "answers"
+    },
+    {
+      "id": "2",
+      "type": "段落信息匹配",
+      "user_answer": "D",
+      "key": "C",
+      "status": "wrong",
+      "answer_source": "answers"
+    },
+    {
+      "id": "3",
+      "type": "段落信息匹配",
+      "user_answer": "F",
+      "key": "F",
+      "status": "correct",
+      "answer_source": "answers"
+    },
+    {
+      "id": "4",
+      "type": "段落信息匹配",
+      "user_answer": "A",
+      "key": "D",
+      "status": "wrong",
+      "answer_source": "answers"
+    },
+    {
+      "id": "5",
+      "type": "段落信息匹配",
+      "user_answer": "C",
+      "key": "E",
+      "status": "wrong",
+      "answer_source": "answers"
+    },
+    {
+      "id": "6",
+      "type": "段落信息匹配",
+      "user_answer": "E",
+      "key": "A",
+      "status": "wrong",
+      "answer_source": "answers"
+    },
+    {
+      "id": "7",
+      "type": "摘要填空",
+      "user_answer": "safety",
+      "key": "safety",
+      "status": "correct",
+      "answer_source": "answers"
+    },
+    {
+      "id": "8",
+      "type": "摘要填空",
+      "user_answer": "traffic",
+      "key": "traffic",
+      "status": "correct",
+      "answer_source": "answers"
+    },
+    {
+      "id": "9",
+      "type": "摘要填空",
+      "user_answer": "carriageway",
+      "key": "carriageway",
+      "status": "correct",
+      "answer_source": "answers"
+    },
+    {
+      "id": "10",
+      "type": "摘要填空",
+      "user_answer": "mobile",
+      "key": "mobile",
+      "status": "correct",
+      "answer_source": "answers"
+    },
+    {
+      "id": "11",
+      "type": "摘要填空",
+      "user_answer": "dangerous",
+      "key": "dangerous",
+      "status": "correct",
+      "answer_source": "answers"
+    },
+    {
+      "id": "12",
+      "type": "摘要填空",
+      "user_answer": "communities",
+      "key": "communities",
+      "status": "correct",
+      "answer_source": "answers"
+    },
+    {
+      "id": "13",
+      "type": "摘要填空",
+      "user_answer": "healthy",
+      "key": "healthy",
+      "status": "correct",
+      "answer_source": "answers"
+    }
+  ],
+  "overview": {
+    "time": "未记录",
+    "order": "未记录",
+    "focus": "提速重点：用 Guard rails 一次定位整组，合并同句填空，再复用该段做匹配；每题核对完整条件后停止扩搜。下表绿色“省时”说明少做哪一步，模块04给整篇执行顺序。C15 本篇未计时，效果需用新题验证。",
+    "type_comments": {
+      "段落信息匹配": "错在第 2、4、5、6 题；重点核对完整要求，并区分相似段落。",
+      "摘要填空": "7 题均正确，答案集中在 E 段；结果不能单独证明当时找得快。"
+    }
+  },
+  "questions": [
+    {
+      "id": "2",
+      "title": "过去与现在的建造方法",
+      "break_before": true,
+      "requirement": {
+        "text": "an example of a contrast between past and present approaches to building",
+        "meaning": "对比的两端是过去与现在；比较的对象是建造／设计方法，不能只有新旧事物。"
+      },
+      "evidence": [
+        {
+          "source": "passage",
+          "location": "C 段第 1 句",
+          "quote": "Whereas medieval builders improvised and adapted construction through their intimate knowledge of materials and personal experience of the conditions on a site, building designs are now conceived and stored in media technologies that detach the designer from the physical and social realities they are creating.",
+          "explanation": "Whereas 引出对比，medieval builders 与 now 对应过去、现在。过去凭材料知识和现场经验调整施工；现在借媒介技术构思、保存设计。",
+          "emphasis": [
+            "Whereas medieval builders",
+            "improvised and adapted construction",
+            "now conceived and stored"
+          ]
+        }
+      ],
+      "comparison": "D 的 modernist approach／older buildings 涉及项目与旧建筑遮篷；C 则对比两种建造方法：现场经验调整与媒介技术设计。比较对象不同。",
+      "cause": {
+        "code": "04",
+        "certainty": "possible",
+        "candidates": [
+          "05"
+        ],
+        "observation": "题干已标 contrast、approaches，未标 past and present；C 已标现在做法，未标过去一端。标记提示查全条件，不能证明当时漏读。",
+        "self_check": "当时只查“有对比”，排查 04；已读懂 C 两种方法却选 D，再排查 05。记不清则待确认。"
+      },
+      "action": "从 past／present 扫时间对照；找到 Whereas 后，把两端各压成“谁＋怎样建造”。两端和比较对象齐全即可确定，只有 modern 或 old 先留作候选。"
+    },
+    {
+      "id": "4",
+      "title": "忽略气候造成的意外问题",
+      "requirement": {
+        "text": "reference to an unforeseen problem arising from ignoring the climate",
+        "meaning": "必须同时有“忽略当地气候”和“因此发生意外问题”，并形成因果关系。"
+      },
+      "evidence": [
+        {
+          "source": "passage",
+          "location": "D 段第 4 句",
+          "quote": "They failed to take into account that purpose-built street cafés could not operate in the hot sun without the protective awnings common in older buildings, and would need energy-consuming air conditioning instead",
+          "explanation": "failed to take into account 对应 ignoring；hot sun 对应 climate。忽略遮阳需求导致咖啡馆无法运营、需用空调；段尾 unexpected results 对应 unforeseen problem。",
+          "emphasis": [
+            "failed to take into account",
+            "could not operate in the hot sun"
+          ]
+        }
+      ],
+      "comparison": "A 讲交通能耗对环境的影响；D 讲气候条件被忽略后，具体设施出现运营问题。前者是“交通影响环境”，后者是“忽略气候导致问题”，因果方向不同。",
+      "cause": {
+        "code": "04",
+        "certainty": "possible",
+        "candidates": [
+          "01"
+        ],
+        "observation": "题干只标 unforeseen problem；D 标了意外结果的总结，未标烈日与遮篷的原因句。A 的环境议题并不满足题目因果。",
+        "self_check": "若当时误解 climate，排查 01；懂词义却只找 problem，排查 04。现在会解释不证明当时会。"
+      },
+      "action": "从 climate 扫天气和气候条件，遇到 hot sun 回读同句的 failed to take into account。写出“忽略什么→导致什么”，两端齐全再选。"
+    },
+    {
+      "id": "5",
+      "title": "帮助行人的措施为何被撤回",
+      "requirement": {
+        "text": "why some measures intended to help people are being reversed",
+        "meaning": "找出原本想帮助人的措施、撤回／拆除动作，以及为什么这样做。"
+      },
+      "evidence": [
+        {
+          "source": "passage",
+          "location": "E 段第 7—8 句",
+          "quote": "These barriers don't just make it harder to cross the road: they divide communities and decrease opportunities for healthy transport. As a result, many are now being removed, causing disruption, cost, and waste.",
+          "explanation": "护栏分隔社区、减少健康出行机会，因此被拆除；前文还说明心理障碍与危险穿行。E 第 4 句的 pedestrian safety 交代了原本的帮助目的。",
+          "emphasis": [
+            "divide communities",
+            "As a result",
+            "being removed"
+          ]
+        }
+      ],
+      "comparison": "C 只说技术简化现实的 drawback，没有措施被撤回的动作。E 的 being removed 对应 reversed。disruption、cost、waste 是拆除带来的后果，不是拆除的理由；理由在 As a result 之前。",
+      "cause": {
+        "code": "04",
+        "certainty": "possible",
+        "candidates": [
+          "02"
+        ],
+        "observation": "题干已标 reversed；E 标了安全目的和部分副作用，却未标 being removed。填空 7—13 全对，只能说明答案正确，不能推断当时已把这段用于第 5 题。",
+        "self_check": "若当时找到 being removed 却没认出它对应 reversed，排查 02；若知道要找撤回却凭 drawback 定案，排查 04。未记录的过程不补猜。"
+      },
+      "action": "先找措施被撤回的动作，再回读其原因。做完 Guard rails 摘要后可复用 E 段，顺读到 As a result；确认“帮助目的＋副作用＋拆除”后停止扩搜。",
+      "break_before": true
+    },
+    {
+      "id": "6",
+      "title": "交通出行如何影响人的生活",
+      "requirement": {
+        "text": "reference to how transport has an impact on human lives",
+        "meaning": "核对“交通／出行方式”如何影响人的生活；不能只凭同样涉及人或健康就定段。"
+      },
+      "evidence": [
+        {
+          "source": "passage",
+          "location": "A 段第 4 句",
+          "quote": "The ways we travel affect our physical and mental health, our social lives, our access to work and culture, and the air we breathe.",
+          "explanation": "The ways we travel 对应 transport，affect 对应 has an impact on。后面列出身心健康、社交、工作文化机会及呼吸空气，落实 human lives。",
+          "emphasis": [
+            "The ways we travel affect",
+            "physical and mental health",
+            "our social lives"
+          ]
+        }
+      ],
+      "comparison": "E 也写心理障碍、社区和健康出行，确实相关；但主线是“护栏→过街障碍与出行机会”。A 明确给出“出行方式→人的多方面生活”。不能仅因 E 是具体例子就排除，要比较影响的主体与对象。",
+      "cause": {
+        "code": "05",
+        "certainty": "possible",
+        "candidates": [
+          "03"
+        ],
+        "observation": "A 标了首句 impact，那里影响的是城市可持续性；直接写生活影响的第 4 句未标。E 的标记与生活话题相关，但不能据此断定当时读过 A 第 4 句。",
+        "self_check": "若当时找到了 A 第 4 句却仍选 E，排查 05；若没定位到该句，排查 03。现在能找回证据，只说明当前定位已完成。"
+      },
+      "action": "从 transport／human lives 扫 travel 与人的生活领域；找到 affect 后问“谁影响谁”。已见 A 的完整对应，就不因 E 的局部近义词反复改选。"
+    }
+  ],
+  "causes": [
+    {
+      "status": "pending",
+      "code": "04",
+      "question_ids": [
+        "2",
+        "4",
+        "5"
+      ],
+      "training": "对比题查两端与对象；原因题查原因与结果；撤回题查措施、动作与理由。缺一项先不定案。"
+    },
+    {
+      "status": "pending",
+      "code": "05",
+      "question_ids": [
+        "2",
+        "6"
+      ],
+      "training": "并排写两个候选的“主体→动作／影响→对象”，圈出不符合题干的部分。"
+    },
+    {
+      "status": "pending",
+      "code": "01",
+      "question_ids": [
+        "4"
+      ],
+      "training": "检查 climate 与 environmental impact 的区别，再判断是词义问题还是条件遗漏。"
+    },
+    {
+      "status": "pending",
+      "code": "02",
+      "question_ids": [
+        "5"
+      ],
+      "training": "核对 reversed ↔ being removed 的对应；会解释后，在新题中检验能否自行认出。"
+    },
+    {
+      "status": "pending",
+      "code": "03",
+      "question_ids": [
+        "6"
+      ],
+      "training": "从题干 transport／human lives 找 travel、affect 和生活领域；找到后再核对范围。"
+    }
+  ],
+  "method": {
+    "reading": "只标有区分度的入口和必要关系；对比查两端，因果查原因与结果。",
+    "locating": "同句连做、同段复用；本篇摘要按 E 的实际行文前进，信息匹配不按题号猜段。",
+    "deciding": "核对主体、动作和限定；条件齐全即停，C/D 比建造方法，A/E 比影响关系。",
+    "checking": "重做 C15 只练动作；用新题的限时正确数、完成数和卡题记录验证。",
+    "keeping": "保留 F 共同目标、E 护栏等短标记；摘要 7/7 仍需计时验证速度。",
+    "speed_plan": {
+      "context": "个人目标：保住准确率，把整套约 75 分钟的完成速度压进 60 分钟。75 分钟、最终换算 8 分来自 C14 Test 3；限时成绩未知，C15 本篇未计时。以下为建议路线。",
+      "steps": [
+        {
+          "stage": "先看题面入口",
+          "action": "预览 1—6 的关系要求与摘要标题。用 Guard rails 扫原文找护栏段；找到之前只扫对象与段落结构，不先精读全部细节。",
+          "saves": "带着同一组任务找入口，减少读完全文后再从头定位。"
+        },
+        {
+          "stage": "局部合并做题",
+          "action": "找到护栏段后，在 E 第 4—7 句连做 7—13：7/8、10/11、12/13 各共用一句。再顺读第 8 句、回扣副作用，完成第 5 题。",
+          "saves": "一次定位覆盖 8 题；省去每题单独全文检索。"
+        },
+        {
+          "stage": "其他匹配",
+          "action": "带着 1、2、3、4、6 的关系要求扫其余段落；遇否定、古今对比、共同目标、气候因果或生活影响才精读。确认后继续扫，不为下一题从 A 重启。",
+          "saves": "让一次段落扫读服务多题；只精读候选证据。"
+        }
+      ],
+      "stop_rule": "全部必要条件对应就作答。一轮针对性回扫仍无新线索，标“？”或两个候选后转题；题组结束再回查缺项。若 Guard rails 一时找不到，也先换入口，不硬守这个顺序。",
+      "practice": "下一套新题设 60 分钟检查点，保留到时答案、完成数和正确数；超时补做另计。卡题只记“找／读／反复确认”。比较限时正确数和漏题数；若更快却漏条件增多，先恢复核对。"
+    }
+  },
+  "highlights": {
+    "status": "observed",
+    "add": [
+      {
+        "source": "passage",
+        "location": "C / 第 2 题",
+        "observed": "已标现在的设计方法；未标过去一端。",
+        "quote": "Whereas medieval builders improvised and adapted construction",
+        "reason": "补过去一端，与已标 now 对读。"
+      },
+      {
+        "source": "passage",
+        "location": "D / 第 4 题",
+        "observed": "已标段末意外结果；未标烈日与遮篷。",
+        "quote": "street cafés could not operate in the hot sun without the protective awnings",
+        "reason": "补具体问题；回读同句 failed to take into account 确认原因。"
+      },
+      {
+        "source": "passage",
+        "location": "E / 第 5 题",
+        "observed": "已标安全目的、心理障碍和危险穿行；未标拆除。",
+        "quote": "As a result, many are now being removed",
+        "reason": "保存撤回动作；理由回看前文。"
+      },
+      {
+        "source": "passage",
+        "location": "A / 第 6 题",
+        "observed": "首句 impact 已标；生活影响句未标。",
+        "quote": "The ways we travel affect our physical and mental health, our social lives",
+        "reason": "标出出行对人的影响；回读同句余下生活领域。"
+      }
+    ],
+    "reduce": [
+      {
+        "source": "passage",
+        "location": "A 首句",
+        "observed": "The way",
+        "action": "取消这个孤立词组",
+        "reason": "过于通用；需回查时以 travel 或具体影响对象定位。"
+      },
+      {
+        "source": "passage",
+        "location": "D 段尾",
+        "observed": "What seems entirely predictable and controllable on screen has unexpected results when translated into reality.",
+        "action": "缩为 unexpected results",
+        "reason": "保留结果路标；具体原因由上方烈日句保存。"
+      }
+    ],
+    "keep": [
+      {
+        "source": "passage",
+        "location": "F / 第 3 题",
+        "observed": "Yet it shares with engineering the aim of designing patterns of movement within limitations of space",
+        "reason": "共同主体、目标和空间限制都在，值得保留。"
+      }
+    ],
+    "question_adjustments": "第 2 题补 past and present；第 4 题补 ignoring the climate；第 5 题保留 reversed 并补 why；第 6 题补 transport 与 human lives。",
+    "boundary": "以上对照两份 PDF 的实际标记。未标不等于没读过；临时路标可保留，不要求把所有答案句涂满。"
+  },
+  "layout": {
+    "break_before_sections": [
+      "03",
+      "05"
+    ]
+  },
+  "answer_routes": [
+    {
+      "id": "1",
+      "status": "verified",
+      "source": "passage",
+      "entry": "dance；not proposing；appealing",
+      "path": "扫 dance 附近的否定建议，找到 not to suggest 后读完整转折。",
+      "location": "B 第 2 句",
+      "check": "跳舞上班有 healthy and happy 的吸引力，但作者明确不主张；不是后半句真正提议的编舞方法。",
+      "time_saver": "读完否定与转折边界即可；不展开后面的 Sennett 人物介绍。"
+    },
+    {
+      "id": "2",
+      "status": "verified",
+      "source": "passage",
+      "entry": "past and present；building；contrast",
+      "path": "扫建造话题中的成对时间词；识别 Whereas、medieval builders—now。",
+      "location": "C 第 1 句",
+      "check": "过去凭现场经验调整施工，现在借媒介技术设计；两端都在比较建造／设计方法。",
+      "time_saver": "同一句查完两端方法即停；不再为了 modern／old 遍搜别段。"
+    },
+    {
+      "id": "3",
+      "status": "verified",
+      "source": "passage",
+      "entry": "objective；both dance and engineering",
+      "path": "扫两者的共同点；shares…aim 对应共同目标，回读 it 指谁。",
+      "location": "F 第 3—4 句",
+      "check": "it 指 choreography；共同目标是受空间限制地设计运动模式。",
+      "time_saver": "只补读 it 的指向；共同目标齐全后，不展开后文编舞训练。"
+    },
+    {
+      "id": "4",
+      "status": "verified",
+      "source": "passage",
+      "entry": "ignoring the climate；unforeseen problem",
+      "path": "扫具体气候条件，遇 hot sun 前查遗漏，后查运营问题。",
+      "location": "D 第 4—5 句",
+      "check": "failed to take into account＋烈日下缺遮篷＋咖啡馆无法运营；unexpected results 确认意外。",
+      "time_saver": "精读烈日与遮篷的因果；本题不用展开同句另一个停车场问题。"
+    },
+    {
+      "id": "5",
+      "status": "verified",
+      "source": "passage",
+      "entry": "measures；being reversed；why",
+      "path": "扫撤回动作，找到 being removed 后回读；可复用护栏摘要的段落。",
+      "location": "E 第 8 句，回查第 4、6—7 句",
+      "check": "原为安全，后有危险穿行和社区分割，因此拆除。disruption/cost/waste 是拆除后果。",
+      "time_saver": "复用 7—13 题已找到的护栏段；顺读拆除句，省去全文重搜。"
+    },
+    {
+      "id": "6",
+      "status": "verified",
+      "source": "passage",
+      "entry": "transport；impact on human lives",
+      "path": "扫 travel 与健康、社交等生活领域；识别 affect 的影响关系。",
+      "location": "A 第 4 句",
+      "check": "出行方式影响身心健康、社交、工作文化与空气；首句 impact 影响的是城市可持续性。",
+      "time_saver": "比较“谁影响谁”后定案；不因 E 的局部近义词反复改选。"
+    },
+    {
+      "id": "7",
+      "status": "verified",
+      "source": "passage",
+      "entry": "标题 Guard rails；British roads；pedestrians",
+      "path": "用护栏标题找到整组出处，再查设置目的：solution to pedestrian…。",
+      "location": "E 第 4 句",
+      "check": "safety：提高行人安全。原文取一个名词，遵守 ONE WORD ONLY。",
+      "time_saver": "本句连做 7、8 两空；一次定位两题，不每空重新找护栏。"
+    },
+    {
+      "id": "8",
+      "status": "verified",
+      "source": "passage",
+      "entry": "movement of…is not disrupted",
+      "path": "接第 7 题同句，找 not disrupted 的改写 smooth flow。",
+      "location": "E 第 4 句后半",
+      "check": "traffic：查 flow 的对象；指车流顺畅，不是行人或护栏。",
+      "time_saver": "接第 7 题同句后半取词；核对 flow 的对象后移到下一句。"
+    },
+    {
+      "id": "9",
+      "status": "verified",
+      "source": "passage",
+      "entry": "access points；cross one…at a time",
+      "path": "往下一句找 access points，再读 divide…into two 与 one for each。",
+      "location": "E 第 5 句",
+      "check": "carriageway：每次过一侧车行道；each 后的单数名词与 one 对应。",
+      "time_saver": "接上题读下一句，查 one for each；不从段首重新读。"
+    },
+    {
+      "id": "10",
+      "status": "verified",
+      "source": "passage",
+      "entry": "psychological difficulties；less…people",
+      "path": "顺读 difficulties 的改写 barriers，随后找受影响更大的人群。",
+      "location": "E 第 6 句前半",
+      "check": "mobile：less mobile people 对应 the least mobile；空格需要形容词。",
+      "time_saver": "本句一并处理 10、11；先查受影响人群，再查另一后果。"
+    },
+    {
+      "id": "11",
+      "status": "verified",
+      "source": "passage",
+      "entry": "another result；cross…in a…way",
+      "path": "接同句 and，查 others 的过街行为；识别 crossings 的修饰词。",
+      "location": "E 第 6 句后半",
+      "check": "dangerous：dangerous crossings 改写为 cross…in a dangerous way。",
+      "time_saver": "接第 10 题同句的 and；只核过街行为，不重读设置护栏的目的。"
+    },
+    {
+      "id": "12",
+      "status": "verified",
+      "source": "passage",
+      "entry": "guard rails separate…",
+      "path": "读下一句，these barriers 指护栏；separate 对应 divide。",
+      "location": "E 第 7 句前半",
+      "check": "communities：查 divide 的宾语，保留原文复数形式。",
+      "time_saver": "本句连做 12、13；先取 divide 的宾语，再看后半交通方式。"
+    },
+    {
+      "id": "13",
+      "status": "verified",
+      "source": "passage",
+      "entry": "transport that are…；more difficult to introduce",
+      "path": "接同句 and，识别 decrease opportunities，再找 transport 的修饰词。",
+      "location": "E 第 7 句后半",
+      "check": "healthy：healthy transport 改写为 transport that are healthy，只取形容词。",
+      "time_saver": "接第 12 题同句取修饰词；本空不必扩读下一句拆除后果。"
+    }
+  ]
+}

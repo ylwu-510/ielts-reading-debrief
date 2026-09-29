@@ -1,0 +1,18 @@
+{
+  "fonts": {"cjk": "PingFang SC", "english": "Arial"},
+  "colors": {
+    "body": "222222", "title": "000000", "muted": "666666",
+    "blue": "1F6FA8", "brown": "A36817", "green": "21805E",
+    "wrong": "BE4946", "header": "DEEEF9", "border": "D9D9D9"
+  },
+  "page_cm": {"width": 21.0, "height": 29.7, "top": 1.6, "bottom": 1.6, "left": 1.8, "right": 1.8, "footer": 0.65},
+  "styles": {
+    "Normal": {"size": 11, "line": 16.5, "before": 0, "after": 5.5, "bold": false, "color": "body"},
+    "Title": {"size": 20.5, "line": 28, "before": 0, "after": 8, "bold": true, "color": "title"},
+    "Subtitle": {"size": 10, "line": 14, "before": 0, "after": 12, "bold": false, "color": "muted"},
+    "Heading 1": {"size": 14.5, "line": 20, "before": 12, "after": 7, "bold": true, "color": "blue"},
+    "Heading 2": {"size": 12, "line": 18, "before": 11, "after": 7, "bold": true, "color": "blue"}
+  },
+  "table": {"size": 10, "line": 14, "padding_vertical_twips": 100, "padding_horizontal_twips": 120, "border_eighth_points": 4},
+  "table_widths_cm": {"overview": [5, 2, 10.4], "causes": [5, 2, 10.4], "add": [2.7, 6, 8.7], "reduce": [2, 7.8, 7.6], "keep": [2.7, 6, 8.7]}
+}

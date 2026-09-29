@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">IELTS Reading Debrief</title>
+  <desc id="desc">给每一道题的定位路径，从原文证据判断错因，改进做题方法与用时。固定五个模块，生成可以编辑的中文 Word。</desc>
+  <rect width="1200" height="340" rx="18" fill="#EFF5FA"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+    <text x="56" y="54" font-size="23" fill="#596976">原文与作答 · 证据与方法</text>
+    <text x="52" y="149" font-size="64" font-weight="600" fill="#151C22">IELTS Reading Debrief</text>
+    <g font-size="39" font-weight="500">
+      <text x="56" y="226" fill="#1F6FA8">逐题定位</text>
+      <text x="252" y="226" fill="#80909C">→</text>
+      <text x="326" y="226" fill="#A36817">判断错因</text>
+      <text x="522" y="226" fill="#80909C">→</text>
+      <text x="596" y="226" fill="#21805E">改进下一次</text>
+    </g>
+    <text x="56" y="291" font-size="25" fill="#596976">定位路径 / 错因分析 / 用时复盘 / 高亮修改</text>
+    <g transform="translate(977 63)" font-size="20" fill="#1F6FA8">
+      <text y="0" font-weight="600">固定五个模块</text>
+      <text y="38">可编辑 Word</text>
+    </g>
+  </g>
+</svg>
