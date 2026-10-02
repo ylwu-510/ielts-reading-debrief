@@ -1,4 +1,4 @@
 interface:
   display_name: "IELTS Reading Debrief"
-  short_description: "给出每题定位与省时动作，用证据分析错因，制定提速路线并修改高亮"
-  default_prompt: "使用 $ielts-reading-debrief，根据我提供的原文、题目、作答、高亮和已知用时，制作包含每题定位与省时动作、整篇提速路线、错题分析及高亮修改的中文复盘 Word。"
+  short_description: "从全文和逐题考点分析错因，给出省时路线、习惯训练与高亮修改"
+  default_prompt: "使用 $ielts-reading-debrief，根据我提供的原文、题目、作答、高亮和已知用时，制作包含全文检索地图、逐题考点与解题路径、错因分析、提速路线、可验收的习惯训练及高亮修改的中文复盘 Word。"

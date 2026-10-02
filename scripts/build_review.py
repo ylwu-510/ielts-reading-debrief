@@ -136,12 +136,25 @@ def validate(data):
             require(route['source'] in sources, f'{path}.source 未在 sources 中声明：{route["source"]}')
         if 'if_stuck' in route:
             required_text(route, 'if_stuck', path)
+        if 'test_point' in route:
+            required_text(route, 'test_point', path)
         routes[route_id] = route
     require(routes.keys() == answers.keys(), 'answer_routes 必须覆盖所有题目（含正确题与待核对题）；缺少：' + '、'.join(qid for qid in answers if qid not in routes))
     overview = object_at(data.get('overview'), 'overview')
     required_text(overview, 'focus', 'overview')
     for field in ('time', 'order', 'date'):
         require(field not in overview or isinstance(overview[field], str), f'overview.{field} 必须是文本')
+    if 'passage_map' in overview:
+        passage_map = required_list(overview, 'passage_map', 'overview')
+        require(passage_map, 'overview.passage_map 不能为空')
+        paragraphs = set()
+        for i, item in enumerate(passage_map):
+            path = f'overview.passage_map[{i}]'; object_at(item, path)
+            for field in ('paragraph', 'role', 'use'):
+                required_text(item, field, path)
+            paragraph_id = normalized(item['paragraph'])
+            require(paragraph_id not in paragraphs, f'{path}.paragraph 重复：{paragraph_id}')
+            paragraphs.add(paragraph_id)
     if 'timing' in overview:
         timing = object_at(overview['timing'], 'overview.timing')
         require(timing.get('scope') in TIMING_SCOPES, 'overview.timing.scope 必须为 full_test / passage / question_group')
@@ -225,6 +238,8 @@ def validate(data):
             require(isinstance(candidates, list) and all(isinstance(code, str) and code in CAUSES for code in candidates), f'{path}.cause.candidates 必须为 01—06 代码数组')
             require(len(set(candidates)) == len(candidates) and cause.get('code') not in candidates, f'{path}.cause.candidates 不得重复，也不得重复主因 code')
             required_text(cause, 'observation', f'{path}.cause')
+            if 'stage' in cause:
+                required_text(cause, 'stage', f'{path}.cause')
             if certainty == 'confirmed':
                 require(not candidates, f'{path}.cause：已确认原因不能保留待排查候选')
                 required_text(cause, 'basis', f'{path}.cause')
@@ -274,6 +289,13 @@ def validate(data):
             path = f'method.speed_plan.steps[{i}]'; object_at(step, path)
             for field in ('stage', 'action', 'saves'):
                 required_text(step, field, path)
+    if 'habits' in method:
+        habits = required_list(method, 'habits', 'method')
+        require(1 <= len(habits) <= 2, 'method.habits 每轮只选 1—2 个训练动作')
+        for i, habit in enumerate(habits):
+            path = f'method.habits[{i}]'; object_at(habit, path)
+            for field in ('name', 'trigger', 'action', 'pass_check', 'record'):
+                required_text(habit, field, path)
     highlights = object_at(data.get('highlights'), 'highlights')
     require(highlights.get('status') in {'observed', 'not_provided'}, 'highlights.status 必须为 observed / not_provided')
     for group in ('add', 'reduce', 'keep'):
@@ -450,6 +472,12 @@ def build_document(data, output, template=None, style_path=None, cjk_font=None, 
         overview_rows.append([f'{typ} {ids}', result, meta.get('type_comments', {}).get(typ, '暂无足够信息判断')])
     table(['题型与题号', '正确数', '本篇判断'], overview_rows, 'overview')
     paragraph(meta['focus'], '本篇重点')
+    if 'passage_map' in meta:
+        heading('全文检索地图', 2)
+        paragraph('用于复盘后回忆各段功能与检索线索；不要求考场上先读完全篇或制作此表。')
+        table(['段落', '内容与作用', '怎样用于解题'],
+              [[item['paragraph'], item['role'], item['use']] for item in meta['passage_map']],
+              'overview', widths=[1.5, 7.3, 8.6])
 
     section(1)
     lookup = {str(a['id']): a for a in data['answers']}
@@ -469,7 +497,10 @@ def build_document(data, output, template=None, style_path=None, cjk_font=None, 
         if route.get('location'):
             source = f"[{route['source']}] " if show_route_sources and route.get('source') else ''
             search.append('→ ' + source + route['location'])
-        check = [(route.get('check', '核对条件待补充'), False, 'body')]
+        check = []
+        if route.get('test_point'):
+            check.extend([('考点：', True, 'brown'), (route['test_point'] + '\n', False, 'body'), ('判定：', True, 'blue')])
+        check.append((route.get('check', '核对条件待补充'), False, 'body'))
         if route.get('time_saver'):
             check.extend([('\n', False, 'body'), ('省时：', True, 'green'), (route['time_saver'], False, 'body')])
         if route.get('if_stuck'):
@@ -513,6 +544,9 @@ def build_document(data, output, template=None, style_path=None, cjk_font=None, 
             if cause.get('candidates'):
                 run(p, '；候选：' + '、'.join(code + ' ' + CAUSES[code] for code in cause['candidates']))
             run(p, '。')
+            if cause.get('stage'):
+                run(p, (' 出错环节：' if certainty == 'confirmed' else ' 优先检查环节：'), True, 'brown')
+                run(p, cause['stage'])
             if certainty == 'confirmed':
                 paragraph('确认依据：' + cause['basis'])
             if certainty != 'confirmed' and cause.get('self_check'):
@@ -548,6 +582,16 @@ def build_document(data, output, template=None, style_path=None, cjk_font=None, 
               'overview', widths=[3, 9.4, 5])
         paragraph(speed_plan['stop_rule'], '何时暂放', 'green')
         paragraph(speed_plan['practice'], '怎样练快', 'green')
+    if 'habits' in data['method']:
+        heading('本轮训练动作', 2)
+        paragraph('以下是下一轮训练安排；完成情况以练习记录为准。').paragraph_format.keep_with_next = True
+        for habit in data['method']['habits']:
+            p = paragraph(label=habit['name'], role='green')
+            p.paragraph_format.keep_with_next = True
+            run(p, '触发：', True, 'green'); run(p, habit['trigger'])
+            paragraph(habit['action'], '动作', 'green').paragraph_format.keep_with_next = True
+            p = paragraph(habit['pass_check'], '验收', 'green')
+            run(p, '　记录：', True, 'green'); run(p, habit['record'])
     for key, label in METHODS.items():
         paragraph(data['method'][key], label, 'green')
     section(4)

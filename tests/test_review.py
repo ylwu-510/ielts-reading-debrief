@@ -48,6 +48,21 @@ def built_document(data):
         return Document(output)
 
 
+def coaching_fixture():
+    data = fixture()
+    data['overview']['passage_map'] = [
+        {'paragraph': 'A', 'role': '说明开放时间的前后变化。', 'use': '变化题与季节填空可共用同一组证据。'},
+    ]
+    data['answer_routes'][0]['test_point'] = '比较对象一致，过去与现在两端齐全。'
+    data['answer_routes'][2]['test_point'] = '从时间限定中提取符合词数要求的季节词。'
+    data['questions'][0]['cause']['stage'] = '候选确认：是否查全前后两个时间条件。'
+    data['method']['habits'] = [
+        {'name': '两端查全再确定', 'trigger': '题干要求变化或对比。', 'action': '分别指出过去和现在的证据，再决定答案。', 'pass_check': '每个比较对象都能对应到原文。', 'record': '记录缺了一端就提前作答的次数。'},
+        {'name': '复用已找到的位置', 'trigger': '下一题仍涉及开放时间。', 'action': '先查已定位句的上下文，再决定是否扩大范围。', 'pass_check': '能从已定位位置取得证据时不重新全文扫描。', 'record': '记录无必要的全文重扫次数。'},
+    ]
+    return data
+
+
 def table_with_header(doc, header):
     return next(table for table in doc.tables if table.cell(0, 0).text == header)
 
@@ -72,6 +87,126 @@ def not_given_fixture():
 
 
 class ReviewValidationTests(unittest.TestCase):
+    def test_passage_map_requires_nonempty_rows_and_unique_paragraphs(self):
+        valid = coaching_fixture()
+        for invalid in (None, {}, [], [None]):
+            with self.subTest(value=invalid):
+                data = deepcopy(valid); data['overview']['passage_map'] = invalid
+                with self.assertRaisesRegex(builder.DataError, 'passage_map'):
+                    builder.validate(data)
+        for field in ('paragraph', 'role', 'use'):
+            for value in ('', '   ', None, 1):
+                data = deepcopy(valid); data['overview']['passage_map'][0][field] = value
+                with self.assertRaisesRegex(builder.DataError, field):
+                    builder.validate(data)
+        data = deepcopy(valid)
+        repeated = deepcopy(data['overview']['passage_map'][0]); repeated['paragraph'] = ' A '
+        data['overview']['passage_map'].append(repeated)
+        with self.assertRaisesRegex(builder.DataError, '重复'):
+            builder.validate(data)
+
+    def test_habit_plan_requires_one_or_two_complete_action_records(self):
+        valid = coaching_fixture()
+        for invalid in (None, {}, [], [None], valid['method']['habits'] * 2):
+            with self.subTest(value=invalid):
+                data = deepcopy(valid); data['method']['habits'] = invalid
+                with self.assertRaisesRegex(builder.DataError, 'habits'):
+                    builder.validate(data)
+        for field in ('name', 'trigger', 'action', 'pass_check', 'record'):
+            for value in ('', '   ', None, 1):
+                data = deepcopy(valid); data['method']['habits'][0][field] = value
+                with self.assertRaisesRegex(builder.DataError, field):
+                    builder.validate(data)
+            data = deepcopy(valid); del data['method']['habits'][0][field]
+            with self.assertRaisesRegex(builder.DataError, field):
+                builder.validate(data)
+        valid['method']['habits'].pop()
+        builder.validate(valid)
+
+    def test_new_optional_text_rejects_blank_values_even_for_pending_routes(self):
+        for index in (0, 1):
+            for invalid in ('', '   ', None, 1, []):
+                data = fixture(); data['answer_routes'][index]['test_point'] = invalid
+                with self.assertRaisesRegex(builder.DataError, 'test_point'):
+                    builder.validate(data)
+        for invalid in ('', '   ', None, 1, []):
+            data = fixture(); data['questions'][0]['cause']['stage'] = invalid
+            with self.assertRaisesRegex(builder.DataError, 'stage'):
+                builder.validate(data)
+
+    def test_coaching_fields_render_without_changing_evidence_scores_or_five_sections(self):
+        import json
+        data = coaching_fixture()
+        data['method']['speed_plan'] = {
+            'context': '本篇用时未记录；以下为下一轮建议。',
+            'steps': [{'stage': '先定位', 'action': '用开放时间线索定位后共用证据。', 'saves': '免去重复全文扫描。'}],
+            'stop_rule': '核对两端后仍不确定时标记缺项再暂放。',
+            'practice': '使用新材料同时记录完成情况、正确率和用时。',
+        }
+        before = deepcopy(data)
+        baseline = builder.validate(fixture())
+        self.assertEqual(builder.validate(data), baseline)
+        doc = built_document(data)
+        self.assertEqual(data, before)
+        text = '\n'.join(p.text for p in doc.paragraphs)
+        self.assertEqual([p.text for p in doc.paragraphs if p.style.name == 'Heading 1'], builder.SECTIONS)
+        self.assertLess(text.index('本篇重点'), text.index('全文检索地图'))
+        self.assertLess(text.index('全文检索地图'), text.index('02 逐题复盘'))
+        self.assertIn('不要求考场上先读完全篇或制作此表', text)
+        passage_map = table_with_header(doc, '段落')
+        self.assertEqual([c.text for c in passage_map.rows[1].cells], list(data['overview']['passage_map'][0].values()))
+        routes = table_with_header(doc, '题号')
+        cell = routes.cell(1, 2)
+        self.assertLess(cell.text.index('考点：'), cell.text.index('判定：'))
+        self.assertLess(cell.text.index('判定：'), cell.text.index('省时：'))
+        self.assertIn(data['answer_routes'][2]['test_point'], routes.cell(3, 2).text)
+        style = json.loads((ROOT / 'assets/word-style.json').read_text())
+        point_label = next(r for r in cell.paragraphs[0].runs if r.text == '考点：')
+        self.assertTrue(point_label.bold)
+        self.assertEqual(str(point_label.font.color.rgb), style['colors']['brown'])
+        point_value = next(r for r in cell.paragraphs[0].runs if r.text == data['answer_routes'][0]['test_point'] + '\n')
+        self.assertFalse(point_value.bold)
+        self.assertEqual(str(point_value.font.color.rgb), style['colors']['body'])
+        self.assertIn('优先检查环节：', text)
+        self.assertNotIn('出错环节：', text)
+        self.assertIn(data['questions'][0]['evidence'][0]['quote'], text)
+        self.assertIn('完成情况以练习记录为准', text)
+        self.assertLess(text.index('本篇提速路线'), text.index('本轮训练动作'))
+        self.assertLess(text.index('怎样练快'), text.index('本轮训练动作'))
+        self.assertLess(text.index('本轮训练动作'), text.index('读题　'))
+        for habit in data['method']['habits']:
+            for value in habit.values():
+                self.assertIn(value, text)
+        for label in ('作答结果', '题目要求', '正确证据', '答案对比', '错因判断', '下次动作', '触发：', '动作', '验收', '记录：'):
+            self.assertIn(label, text)
+
+    def test_stage_label_follows_existing_cause_certainty_and_never_confirms_it(self):
+        for certainty in ('possible', 'unconfirmed', 'confirmed'):
+            data = coaching_fixture(); cause = data['questions'][0]['cause']; cause['certainty'] = certainty
+            if certainty == 'unconfirmed':
+                cause['code'] = None
+                data['causes'][0]['code'] = None
+            elif certainty == 'confirmed':
+                cause['basis'] = '用户复述作答当时只检查了现在的开放时间。'
+            doc = built_document(data); text = '\n'.join(p.text for p in doc.paragraphs)
+            if certainty == 'confirmed':
+                self.assertIn('出错环节：', text)
+                self.assertNotIn('优先检查环节：', text)
+                self.assertIn(cause['basis'], text)
+            else:
+                self.assertIn('优先检查环节：', text)
+                self.assertNotIn('出错环节：', text)
+                self.assertIn('自测：', text)
+
+    def test_legacy_review_needs_no_new_coaching_fields(self):
+        data = fixture(); doc = built_document(data)
+        text = '\n'.join(p.text for p in doc.paragraphs)
+        for heading in ('全文检索地图', '本轮训练动作', '优先检查环节：', '出错环节：'):
+            self.assertNotIn(heading, text)
+        cell = table_with_header(doc, '题号').cell(1, 2)
+        self.assertNotIn('考点：', cell.text)
+        self.assertTrue(cell.text.startswith(data['answer_routes'][0]['check']))
+
     def test_unknown_answer_is_neither_wrong_nor_correct(self):
         audit = builder.validate(fixture())
         self.assertEqual(audit['counts'], {'wrong': 1, 'unverified': 1, 'correct': 1})

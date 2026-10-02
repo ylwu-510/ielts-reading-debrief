@@ -1,6 +1,6 @@
 {
   "title": "C15 Test 2 Passage 1 阅读复盘",
-  "subtitle": "Could urban engineers learn from dance?  |  真实作答示例",
+  "subtitle": "Could urban engineers learn from dance?  解题方法与习惯复盘",
   "sources": [
     {
       "id": "passage",
@@ -122,11 +122,48 @@
   "overview": {
     "time": "未记录",
     "order": "未记录",
-    "focus": "提速重点：用 Guard rails 一次定位整组，合并同句填空，再复用该段做匹配；每题核对完整条件后停止扩搜。下表绿色“省时”说明少做哪一步，模块04给整篇执行顺序。C15 本篇未计时，效果需用新题验证。",
+    "focus": "先练两件事：读题时保留“对象＋关系＋限制”；找到充分证据就作答，卡住则留下缺项再回查。第 2、4、5、6 题的错误候选都未满足完整要求；这不等于已确认你当时漏读了条件。",
     "type_comments": {
       "段落信息匹配": "错在第 2、4、5、6 题；重点核对完整要求，并区分相似段落。",
       "摘要填空": "7 题均正确，答案集中在 E 段；结果不能单独证明当时找得快。"
-    }
+    },
+    "passage_map": [
+      {
+        "paragraph": "A",
+        "role": "交通为何需要改变",
+        "use": "出行方式影响人的生活 → 第 6 题。别把首句城市可持续性当作同一对象。"
+      },
+      {
+        "paragraph": "B",
+        "role": "从舞蹈引入设计方法",
+        "use": "不主张跳舞上班，而是借鉴编舞 → 第 1 题。留意否定与真正建议的边界。"
+      },
+      {
+        "paragraph": "C",
+        "role": "古今建造方法对照",
+        "use": "现场经验与媒介技术设计 → 第 2 题。比较的是方法，不是新旧建筑名称。"
+      },
+      {
+        "paragraph": "D",
+        "role": "设计脱离现实的案例",
+        "use": "烈日下咖啡馆运营受阻 → 第 4 题。查气候、忽略和意外问题的因果链。"
+      },
+      {
+        "paragraph": "E",
+        "role": "护栏的目的及副作用",
+        "use": "第 7—13 题集中于第 4—7 句；拆除原因对应第 5 题，可复用同段位置。"
+      },
+      {
+        "paragraph": "F",
+        "role": "编舞与工程的共同目标",
+        "use": "空间限制下设计运动模式 → 第 3 题。it 回指 choreography。"
+      },
+      {
+        "paragraph": "G",
+        "role": "身体试验怎样用于设计",
+        "use": "补全全文论证：身体模拟、即时反馈、情感与功能。本题组无直接答案。"
+      }
+    ]
   },
   "questions": [
     {
@@ -141,8 +178,8 @@
         {
           "source": "passage",
           "location": "C 段第 1 句",
-          "quote": "Whereas medieval builders improvised and adapted construction through their intimate knowledge of materials and personal experience of the conditions on a site, building designs are now conceived and stored in media technologies that detach the designer from the physical and social realities they are creating.",
-          "explanation": "Whereas 引出对比，medieval builders 与 now 对应过去、现在。过去凭材料知识和现场经验调整施工；现在借媒介技术构思、保存设计。",
+          "quote": "Whereas medieval builders improvised and adapted construction through their intimate knowledge of materials and personal experience of the conditions on a site, building designs are now conceived and stored in media technologies",
+          "explanation": "Whereas 对比古今：过去凭材料知识和现场经验调整施工；现在借媒介技术构思、保存设计。",
           "emphasis": [
             "Whereas medieval builders",
             "improvised and adapted construction",
@@ -157,10 +194,11 @@
         "candidates": [
           "05"
         ],
-        "observation": "题干已标 contrast、approaches，未标 past and present；C 已标现在做法，未标过去一端。标记提示查全条件，不能证明当时漏读。",
-        "self_check": "当时只查“有对比”，排查 04；已读懂 C 两种方法却选 D，再排查 05。记不清则待确认。"
+        "observation": "题干未标 past and present；C 只标现在做法，未标过去一端。标记提示查全条件，不能证明当时漏读。",
+        "self_check": "当时只查“有对比”，查 04；读懂 C 的两种方法仍选 D，查 05。记不清则待确认。",
+        "stage": "读题保留条件 → 比较候选"
       },
-      "action": "从 past／present 扫时间对照；找到 Whereas 后，把两端各压成“谁＋怎样建造”。两端和比较对象齐全即可确定，只有 modern 或 old 先留作候选。"
+      "action": "读 contrast 时先确定“古今＋建造方法”。扫到 Whereas，分别说出过去凭现场经验、现在借媒介设计；两端及维度齐全就选 C。若仍留 D，只回查 D 是否也给出这两种方法。"
     },
     {
       "id": "4",
@@ -173,11 +211,20 @@
         {
           "source": "passage",
           "location": "D 段第 4 句",
-          "quote": "They failed to take into account that purpose-built street cafés could not operate in the hot sun without the protective awnings common in older buildings, and would need energy-consuming air conditioning instead",
-          "explanation": "failed to take into account 对应 ignoring；hot sun 对应 climate。忽略遮阳需求导致咖啡馆无法运营、需用空调；段尾 unexpected results 对应 unforeseen problem。",
+          "quote": "They failed to take into account that purpose-built street cafés could not operate in the hot sun without the protective awnings common in older buildings",
+          "explanation": "failed to take into account 对应 ignoring；hot sun 对应 climate。忽略烈日下的遮阳需求，导致咖啡馆无法运营。",
           "emphasis": [
             "failed to take into account",
             "could not operate in the hot sun"
+          ]
+        },
+        {
+          "source": "passage",
+          "location": "D 段第 5 句",
+          "quote": "What seems entirely predictable and controllable on screen has unexpected results when translated into reality.",
+          "explanation": "unexpected results 对应 unforeseen problem，确认这是意外问题。",
+          "emphasis": [
+            "unexpected results"
           ]
         }
       ],
@@ -189,9 +236,10 @@
           "01"
         ],
         "observation": "题干只标 unforeseen problem；D 标了意外结果的总结，未标烈日与遮篷的原因句。A 的环境议题并不满足题目因果。",
-        "self_check": "若当时误解 climate，排查 01；懂词义却只找 problem，排查 04。现在会解释不证明当时会。"
+        "self_check": "当时误解 climate，查 01；懂词却只找 problem，查 04。现在能解释不证明当时会。",
+        "stage": "理解 climate → 核对因果"
       },
-      "action": "从 climate 扫天气和气候条件，遇到 hot sun 回读同句的 failed to take into account。写出“忽略什么→导致什么”，两端齐全再选。"
+      "action": "把目标记为“忽略气候→意外问题”。扫到 hot sun，读全 failed to take into account 到 could not operate，再用段尾 unexpected results 确认意外性；条件齐全即选，不继续展开停车场。"
     },
     {
       "id": "5",
@@ -203,9 +251,18 @@
       "evidence": [
         {
           "source": "passage",
+          "location": "E 段第 4 句",
+          "quote": "were an engineering solution to pedestrian safety",
+          "explanation": "主语是 guard rails；原来设置护栏是为了解决行人安全问题。",
+          "emphasis": [
+            "pedestrian safety"
+          ]
+        },
+        {
+          "source": "passage",
           "location": "E 段第 7—8 句",
-          "quote": "These barriers don't just make it harder to cross the road: they divide communities and decrease opportunities for healthy transport. As a result, many are now being removed, causing disruption, cost, and waste.",
-          "explanation": "护栏分隔社区、减少健康出行机会，因此被拆除；前文还说明心理障碍与危险穿行。E 第 4 句的 pedestrian safety 交代了原本的帮助目的。",
+          "quote": "they divide communities and decrease opportunities for healthy transport. As a result, many are now being removed, causing disruption, cost, and waste.",
+          "explanation": "As a result 前是拆除原因；being removed 是撤回动作；causing…是拆除后果。",
           "emphasis": [
             "divide communities",
             "As a result",
@@ -220,10 +277,11 @@
         "candidates": [
           "02"
         ],
-        "observation": "题干已标 reversed；E 标了安全目的和部分副作用，却未标 being removed。填空 7—13 全对，只能说明答案正确，不能推断当时已把这段用于第 5 题。",
-        "self_check": "若当时找到 being removed 却没认出它对应 reversed，排查 02；若知道要找撤回却凭 drawback 定案，排查 04。未记录的过程不补猜。"
+        "observation": "题干已标 reversed；E 标了安全目的与部分副作用，未标拆除动作。填空全对不能证明当时复用了该段。",
+        "self_check": "当时未认出 removed 对应 reversed，查 02；懂撤回却凭 drawback 定案，查 04。",
+        "stage": "识别撤回改写 → 回查原因"
       },
-      "action": "先找措施被撤回的动作，再回读其原因。做完 Guard rails 摘要后可复用 E 段，顺读到 As a result；确认“帮助目的＋副作用＋拆除”后停止扩搜。",
+      "action": "把目标记为“帮助措施为何撤回”。做完摘要后顺读 being removed，回看 As a result 前的副作用，并用 pedestrian safety 核对原目的；三项齐全即选。不要把拆除后的 cost 当作原因。",
       "break_before": true
     },
     {
@@ -253,10 +311,11 @@
         "candidates": [
           "03"
         ],
-        "observation": "A 标了首句 impact，那里影响的是城市可持续性；直接写生活影响的第 4 句未标。E 的标记与生活话题相关，但不能据此断定当时读过 A 第 4 句。",
-        "self_check": "若当时找到了 A 第 4 句却仍选 E，排查 05；若没定位到该句，排查 03。现在能找回证据，只说明当前定位已完成。"
+        "observation": "A 的首句 impact 已标，生活影响句未标；E 的生活话题已标。不能据此断定当时读过 A 的证据。",
+        "self_check": "当时找到 A 第 4 句仍选 E，查 05；没找到该句，查 03。记不清则待确认。",
+        "stage": "定位生活影响 → 对齐主体与对象"
       },
-      "action": "从 transport／human lives 扫 travel 与人的生活领域；找到 affect 后问“谁影响谁”。已见 A 的完整对应，就不因 E 的局部近义词反复改选。"
+      "action": "把目标记为“出行方式→人的生活”。扫到 travel／affect 后对齐影响者与受影响者，用健康、社交等具体表现确认；若 A/E 犹豫，只比较两段这条关系，不重译整段。"
     }
   ],
   "causes": [
@@ -305,33 +364,49 @@
     }
   ],
   "method": {
-    "reading": "只标有区分度的入口和必要关系；对比查两端，因果查原因与结果。",
-    "locating": "同句连做、同段复用；本篇摘要按 E 的实际行文前进，信息匹配不按题号猜段。",
-    "deciding": "核对主体、动作和限定；条件齐全即停，C/D 比建造方法，A/E 比影响关系。",
-    "checking": "重做 C15 只练动作；用新题的限时正确数、完成数和卡题记录验证。",
-    "keeping": "保留 F 共同目标、E 护栏等短标记；摘要 7/7 仍需计时验证速度。",
+    "reading": "匹配题先看完整组目标；填空题先看 ONE WORD ONLY，并把每空改述成一个问题。题旁只需极短提示。",
+    "locating": "摘要标题找 E；匹配题一次扫段服务多题。全文地图用于复盘，不要求考场先给 A—G 写摘要。",
+    "deciding": "从扫读切到局部细读。核对对象、关系和本题限制；填空再检查字数、拼写与原文词形。",
+    "checking": "本轮只练上面两个动作。比较难度相近的新题组；同时看错误类型、正确率与总用时，不只看速度。",
+    "keeping": "7—13 全对，保留现有正确结果；具体用了什么方法仍待确认。F 的共同目标标记可继续作为回查依据。",
     "speed_plan": {
-      "context": "个人目标：保住准确率，把整套约 75 分钟的完成速度压进 60 分钟。75 分钟、最终换算 8 分来自 C14 Test 3；限时成绩未知，C15 本篇未计时。以下为建议路线。",
+      "context": "可尝试以下路线。C15 未记录用时；个人速度背景是 C14 Test 3 整套约 75 分钟、最终换算 8 分，60 分钟成绩未知。目标是在新题中减少无效回读，同时守住准确率。",
       "steps": [
         {
           "stage": "先看题面入口",
-          "action": "预览 1—6 的关系要求与摘要标题。用 Guard rails 扫原文找护栏段；找到之前只扫对象与段落结构，不先精读全部细节。",
-          "saves": "带着同一组任务找入口，减少读完全文后再从头定位。"
+          "action": "先读 1—6 的完整目标：未提议／古今方法／共同目标／气候因果／撤回原因／生活影响。再用摘要题面 Guard rails 扫描原文。",
+          "saves": "匹配题共享待找目标；摘要用辨识度高的入口缩小范围。"
         },
         {
           "stage": "局部合并做题",
-          "action": "找到护栏段后，在 E 第 4—7 句连做 7—13：7/8、10/11、12/13 各共用一句。再顺读第 8 句、回扣副作用，完成第 5 题。",
+          "action": "定位护栏段后，核对每空两侧条件，按 E 第 4—7 句实际顺序做 7—13；7/8、10/11、12/13 共用句子。顺读第 8 句处理第 5 题。",
           "saves": "一次定位覆盖 8 题；省去每题单独全文检索。"
         },
         {
           "stage": "其他匹配",
-          "action": "带着 1、2、3、4、6 的关系要求扫其余段落；遇否定、古今对比、共同目标、气候因果或生活影响才精读。确认后继续扫，不为下一题从 A 重启。",
+          "action": "带着其余五题的目标，按段扫读并更新未完成题。遇否定、对比、共同目标、气候因果或生活影响，再局部细读；不为每题重启全文。",
           "saves": "让一次段落扫读服务多题；只精读候选证据。"
         }
       ],
-      "stop_rule": "全部必要条件对应就作答。一轮针对性回扫仍无新线索，标“？”或两个候选后转题；题组结束再回查缺项。若 Guard rails 一时找不到，也先换入口，不硬守这个顺序。",
-      "practice": "下一套新题设 60 分钟检查点，保留到时答案、完成数和正确数；超时补做另计。卡题只记“找／读／反复确认”。比较限时正确数和漏题数；若更快却漏条件增多，先恢复核对。"
-    }
+      "stop_rule": "条件齐全就作答并离开。一轮针对性检查仍无新发现，保留“候选位置＋缺哪项”再转题，题组末先回收已有候选的题。暂放依据是没有进展，不是每题统一计秒。",
+      "practice": "旧题只练动作，不作为提速证据。下一套新题到 60 分钟保留答案，核对限时完成数与正确数；补做另记用时和成绩。只对卡题补记主要环节，不逐题计秒。"
+    },
+    "habits": [
+      {
+        "name": "先明确完整目标，再找位置",
+        "trigger": "读匹配题或填空题时。",
+        "action": "脑中保留“对象＋关系＋限制”。第 5 题不能只记 reversed，还要保留 why；第 8 题要问哪种流动不能受阻。",
+        "pass_check": "对新题核对时，能指出每个必要条件的依据；做完后检查有没有“找对话题却漏关系”的错题。",
+        "record": "题组结束记：漏掉必要条件的题号；没有就记 0。题干标记少不等于动作完成。"
+      },
+      {
+        "name": "证据齐全就离开，卡住只查缺项",
+        "trigger": "已有候选答案，或开始反复读同一处时。",
+        "action": "先给一句证据理由；充分就填。仍不确定，留下候选位置和缺项，转题后再定向回查。例：第 2 题只比较 C/D 的建造方法。",
+        "pass_check": "回查有明确缺项；修改已确认答案有新证据。仅因不放心重读时，能及时发现并停止。",
+        "record": "每组记无新证据的反复回查题号、总用时与正确数／题数；不靠漏查条件换速度。"
+      }
+    ]
   },
   "highlights": {
     "status": "observed",
@@ -394,6 +469,7 @@
   },
   "layout": {
     "break_before_sections": [
+      "02",
       "03",
       "05"
     ]
@@ -407,7 +483,8 @@
       "path": "扫 dance 附近的否定建议，找到 not to suggest 后读完整转折。",
       "location": "B 第 2 句",
       "check": "跳舞上班有 healthy and happy 的吸引力，但作者明确不主张；不是后半句真正提议的编舞方法。",
-      "time_saver": "读完否定与转折边界即可；不展开后面的 Sennett 人物介绍。"
+      "time_saver": "读完否定与转折边界即可；不展开后面的 Sennett 人物介绍。",
+      "test_point": "否定范围与让步：有吸引力，但不被提议"
     },
     {
       "id": "2",
@@ -417,7 +494,8 @@
       "path": "扫建造话题中的成对时间词；识别 Whereas、medieval builders—now。",
       "location": "C 第 1 句",
       "check": "过去凭现场经验调整施工，现在借媒介技术设计；两端都在比较建造／设计方法。",
-      "time_saver": "同一句查完两端方法即停；不再为了 modern／old 遍搜别段。"
+      "time_saver": "同一句查完两端方法即停；不再为了 modern／old 遍搜别段。",
+      "test_point": "比较双方和维度：古今＋建造方法"
     },
     {
       "id": "3",
@@ -427,7 +505,8 @@
       "path": "扫两者的共同点；shares…aim 对应共同目标，回读 it 指谁。",
       "location": "F 第 3—4 句",
       "check": "it 指 choreography；共同目标是受空间限制地设计运动模式。",
-      "time_saver": "只补读 it 的指向；共同目标齐全后，不展开后文编舞训练。"
+      "time_saver": "只补读 it 的指向；共同目标齐全后，不展开后文编舞训练。",
+      "test_point": "共同目标与指代：两者共享什么"
     },
     {
       "id": "4",
@@ -437,7 +516,8 @@
       "path": "扫具体气候条件，遇 hot sun 前查遗漏，后查运营问题。",
       "location": "D 第 4—5 句",
       "check": "failed to take into account＋烈日下缺遮篷＋咖啡馆无法运营；unexpected results 确认意外。",
-      "time_saver": "精读烈日与遮篷的因果；本题不用展开同句另一个停车场问题。"
+      "time_saver": "精读烈日与遮篷的因果；本题不用展开同句另一个停车场问题。",
+      "test_point": "因果方向：忽略气候 → 意外问题"
     },
     {
       "id": "5",
@@ -447,7 +527,8 @@
       "path": "扫撤回动作，找到 being removed 后回读；可复用护栏摘要的段落。",
       "location": "E 第 8 句，回查第 4、6—7 句",
       "check": "原为安全，后有危险穿行和社区分割，因此拆除。disruption/cost/waste 是拆除后果。",
-      "time_saver": "复用 7—13 题已找到的护栏段；顺读拆除句，省去全文重搜。"
+      "time_saver": "复用 7—13 题已找到的护栏段；顺读拆除句，省去全文重搜。",
+      "test_point": "目的、撤回原因与撤回后果分开"
     },
     {
       "id": "6",
@@ -457,7 +538,8 @@
       "path": "扫 travel 与健康、社交等生活领域；识别 affect 的影响关系。",
       "location": "A 第 4 句",
       "check": "出行方式影响身心健康、社交、工作文化与空气；首句 impact 影响的是城市可持续性。",
-      "time_saver": "比较“谁影响谁”后定案；不因 E 的局部近义词反复改选。"
+      "time_saver": "比较“谁影响谁”后定案；不因 E 的局部近义词反复改选。",
+      "test_point": "影响关系：谁影响谁，不能只对上话题"
     },
     {
       "id": "7",
@@ -466,8 +548,9 @@
       "entry": "标题 Guard rails；British roads；pedestrians",
       "path": "用护栏标题找到整组出处，再查设置目的：solution to pedestrian…。",
       "location": "E 第 4 句",
-      "check": "safety：提高行人安全。原文取一个名词，遵守 ONE WORD ONLY。",
-      "time_saver": "本句连做 7、8 两空；一次定位两题，不每空重新找护栏。"
+      "check": "safety：of pedestrians 对应 pedestrian safety；原文取词，每空只填一个词。",
+      "time_saver": "本句连做 7、8 两空；一次定位两题，不每空重新找护栏。",
+      "test_point": "所属与目的：改善行人的哪一方面"
     },
     {
       "id": "8",
@@ -476,8 +559,9 @@
       "entry": "movement of…is not disrupted",
       "path": "接第 7 题同句，找 not disrupted 的改写 smooth flow。",
       "location": "E 第 4 句后半",
-      "check": "traffic：查 flow 的对象；指车流顺畅，不是行人或护栏。",
-      "time_saver": "接第 7 题同句后半取词；核对 flow 的对象后移到下一句。"
+      "check": "traffic：not disrupted 对应 smooth flow；核对流动的是车流，不能只凭名词词性取词。",
+      "time_saver": "接第 7 题同句后半取词；核对 flow 的对象后移到下一句。",
+      "test_point": "动作对象：哪种流动要保持顺畅"
     },
     {
       "id": "9",
@@ -486,8 +570,9 @@
       "entry": "access points；cross one…at a time",
       "path": "往下一句找 access points，再读 divide…into two 与 one for each。",
       "location": "E 第 5 句",
-      "check": "carriageway：每次过一侧车行道；each 后的单数名词与 one 对应。",
-      "time_saver": "接上题读下一句，查 one for each；不从段首重新读。"
+      "check": "carriageway：divide…into two—one for each 对应 one…at a time；保留单数。",
+      "time_saver": "接上题读下一句，查 one for each；不从段首重新读。",
+      "test_point": "数量与单位：一次过一侧什么"
     },
     {
       "id": "10",
@@ -496,8 +581,9 @@
       "entry": "psychological difficulties；less…people",
       "path": "顺读 difficulties 的改写 barriers，随后找受影响更大的人群。",
       "location": "E 第 6 句前半",
-      "check": "mobile：less mobile people 对应 the least mobile；空格需要形容词。",
-      "time_saver": "本句一并处理 10、11；先查受影响人群，再查另一后果。"
+      "check": "mobile：the least mobile 指行动最不便的人群，对应题干 less…people 的概括；取形容词。",
+      "time_saver": "本句一并处理 10、11；先查受影响人群，再查另一后果。",
+      "test_point": "人群限定：受影响更大的是哪类人"
     },
     {
       "id": "11",
@@ -506,8 +592,9 @@
       "entry": "another result；cross…in a…way",
       "path": "接同句 and，查 others 的过街行为；识别 crossings 的修饰词。",
       "location": "E 第 6 句后半",
-      "check": "dangerous：dangerous crossings 改写为 cross…in a dangerous way。",
-      "time_saver": "接第 10 题同句的 and；只核过街行为，不重读设置护栏的目的。"
+      "check": "dangerous：make dangerous crossings 改写为 cross…in a dangerous way，行为与修饰同时对应。",
+      "time_saver": "接第 10 题同句的 and；只核过街行为，不重读设置护栏的目的。",
+      "test_point": "词性与句式改写：危险穿行 → 怎样穿行"
     },
     {
       "id": "12",
@@ -516,8 +603,9 @@
       "entry": "guard rails separate…",
       "path": "读下一句，these barriers 指护栏；separate 对应 divide。",
       "location": "E 第 7 句前半",
-      "check": "communities：查 divide 的宾语，保留原文复数形式。",
-      "time_saver": "本句连做 12、13；先取 divide 的宾语，再看后半交通方式。"
+      "check": "communities：separate 对应 divide；核对宾语，原样保留复数 communities。",
+      "time_saver": "本句连做 12、13；先取 divide 的宾语，再看后半交通方式。",
+      "test_point": "动词宾语与复数：护栏分隔什么"
     },
     {
       "id": "13",
@@ -526,8 +614,9 @@
       "entry": "transport that are…；more difficult to introduce",
       "path": "接同句 and，识别 decrease opportunities，再找 transport 的修饰词。",
       "location": "E 第 7 句后半",
-      "check": "healthy：healthy transport 改写为 transport that are healthy，只取形容词。",
-      "time_saver": "接第 12 题同句取修饰词；本空不必扩读下一句拆除后果。"
+      "check": "healthy：healthy transport 变成 transport that are healthy；decrease opportunities 对应更难推广。",
+      "time_saver": "接第 12 题同句取修饰词；本空不必扩读下一句拆除后果。",
+      "test_point": "修饰关系：哪种交通方式"
     }
   ]
 }
